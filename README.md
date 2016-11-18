@@ -1,0 +1,34 @@
+# Google API Client for Elixir
+
+Elixir library for accessing Google APIs.
+
+Only the Knowledge Graph Search API is currently supported. PRs are welcome for more APIs.
+
+## Installation
+
+1. Add google_api_client to your list of dependencies in `mix.exs`:
+
+```elixir
+  def deps do
+    [{:google_api_client, git: "https://github.com/seanabrahams/google-api-client.git"}]
+  end
+```
+
+You will need a Google Developers Console project.
+
+1. Go to the [Google Developers Console](https://console.developers.google.com/project).
+2. Click Create Project, enter a name, and click Create.
+3. Once inside your project, enable access to the Google APIs you want this project to have access to (Library -> Search -> Enable).
+4. Create Credentials (API Key)
+
+```elixir
+  config :google_api_client,
+    api_key: "Your API key"
+```
+
+## Usage
+
+```elixir
+Google.Apis.KnowledgeGraph.search("elixir")
+Google.Apis.??? # Submit a PR
+```
