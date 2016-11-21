@@ -10,7 +10,7 @@ Only the Knowledge Graph Search API is currently supported. PRs are welcome for 
 
 ```elixir
   def deps do
-    [{:google_api_client, git: "https://github.com/seanabrahams/google-api-client.git"}]
+    [{:google_api_client, git: "https://github.com/seanabrahams/google-api-elixir-client.git"}]
   end
 ```
 
@@ -20,6 +20,7 @@ You will need a Google Developers Console project.
 2. Click Create Project, enter a name, and click Create.
 3. Once inside your project, enable access to the Google APIs you want this project to have access to (Library -> Search -> Enable).
 4. Create Credentials (API Key)
+5. Add the following to your Elixir app's configuration:
 
 ```elixir
   config :google_api_client,
@@ -29,6 +30,11 @@ You will need a Google Developers Console project.
 ## Usage
 
 ```elixir
-Google.Apis.KnowledgeGraph.search("elixir")
+results = Google.Apis.KnowledgeGraph.search("elixir")
+results["itemListElement"] # List of results
+
+# See https://developers.google.com/knowledge-graph/reference/rest/v1/ for a
+# full description of what's contained in results
+
 Google.Apis.??? # Submit a PR
 ```
