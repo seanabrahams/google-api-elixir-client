@@ -4,7 +4,7 @@ use Mix.Config
 config :google_api_client,
   api_key: System.get_env("GOOGLE_API_KEY")
 # Remember to load your api key in your system env before iex -S mix
-# export TMDB_KEY="<TMDB_KEY_HERE>"
+# export GOOGLE_API_KEY="<GOOGLE_API_KEY_HERE>"
 
 # This configuration is loaded before any dependency and is restricted
 # to this project. If another project depends on this project, this
