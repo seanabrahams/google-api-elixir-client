@@ -2,7 +2,12 @@
 
 Elixir library for accessing Google APIs.
 
-Only the Knowledge Graph Search API is currently supported. PRs are welcome for more APIs.
+Only the following APIs are supported:
+
+* Knowledge Graph Search API
+* Maps Time Zone API
+
+PRs are welcome for more APIs.
 
 ## Installation
 
@@ -35,6 +40,9 @@ results["itemListElement"] # List of results
 
 # See https://developers.google.com/knowledge-graph/reference/rest/v1/ for a
 # full description of what's contained in results
+
+Google.Apis.Maps.TimeZone.get(location: {-33.86,151.20})
+# => %{"dstOffset" => 3600, "rawOffset" => 36000, "status" => "OK", "timeZoneId" => "Australia/Sydney", "timeZoneName" => "Australian Eastern Daylight Time"}
 
 Google.Apis.??? # Submit a PR
 ```
