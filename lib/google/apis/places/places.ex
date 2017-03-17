@@ -5,14 +5,14 @@ defmodule Google.Apis.Places do
   Search Google's Place Autocomplete: https://developers.google.com/places/web-service/autocomplete
 
   Usage:
-  Google.Apis.KnowledgeGraph.search("elixir")
-  Google.Apis.KnowledgeGraph.search("elixir", limit: 20)
+  Google.Apis.Places.autocomplete("ne")
+  Google.Apis.Places.autocomplete("ne", language: "en")
 
   Available options:
-  ids: "", languages: "", types: "", indent: false,  prefix: false, limit: 10
+  https://developers.google.com/places/web-service/autocomplete
 
-  See https://developers.google.com/knowledge-graph/reference/rest/v1/
   """
+
   def autocomplete(input, params \\ []) do
     params = [input: input] ++ params
     get!(URI.encode_query(params)).body
