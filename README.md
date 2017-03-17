@@ -44,7 +44,6 @@ results["itemListElement"] # List of results
 
 Google.Apis.Maps.TimeZone.get(location: {-33.86,151.20})
 # => %{"dstOffset" => 3600, "rawOffset" => 36000, "status" => "OK", "timeZoneId" => "Australia/Sydney", "timeZoneName" => "Australian Eastern Daylight Time"}
-
 Google.Apis.Places.autocomplete("poz", language: "pl")
 
 Google.Apis.??? # Submit a PR
