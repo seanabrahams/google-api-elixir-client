@@ -5,7 +5,7 @@ defmodule Google.Apis.Analytics.Accounts do
   Google Analytics, Accounts Management: https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/management/accounts
 
   Usage:
-  Google.Apis.Analytics.Accounts.list()
+  Google.Apis.Analytics.Accounts.list(access_token)
 
   Available options:
   max_results: 100, start_index: 0
