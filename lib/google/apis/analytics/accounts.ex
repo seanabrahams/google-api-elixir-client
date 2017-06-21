@@ -13,7 +13,7 @@ defmodule Google.Apis.Analytics.Accounts do
   See https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/management/accounts/list
   """
   def list(token, params \\ [max_results: 100,  start_index: 0]) do
-    headers = ["Authorization": "Bearer #{token}"]
+    headers = build_auth_headers(token)
     get!(URI.encode_query(params), headers).body
   end
 end

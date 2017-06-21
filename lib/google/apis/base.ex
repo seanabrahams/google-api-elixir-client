@@ -9,18 +9,22 @@ defmodule Google.Apis.Base do
       end
 
       defp process_url(url) do
-        url = "#{unquote(endpoint)}#{url}"
+        full_url = "#{unquote(endpoint)}#{url}"
         case unquote(oauth_only) do
-          true -> url
+          true -> full_url
           _ ->
             api_key = Application.fetch_env!(:google_api_client, :api_key)
-            uri = URI.parse(url)
+            uri = URI.parse(full_url)
             query = URI.decode_query(uri.query || "")
                     |> Map.merge(%{"key" => api_key})
             uri
             |> Map.put(:query, URI.encode_query(query))
             |> URI.to_string
         end
+      end
+
+      defp build_auth_headers(token) do
+        ["Authorization": "Bearer #{token}", "Content-Type": "application/json"]
       end
     end
   end

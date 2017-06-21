@@ -55,5 +55,11 @@ Google.Apis.Places.autocomplete("poz", language: "pl")
 
 Google.Apis.Analytics.Accounts.list("a_valid_oauth_token")
 
+Google.Apis.Analytics.WebProperties.get("a_valid_oauth_token", account_id, web_property_id)
+Google.Apis.Analytics.WebProperties.insert("a_valid_oauth_token", account_id, resource)
+Google.Apis.Analytics.WebProperties.list("a_valid_oauth_token", account_id)
+Google.Apis.Analytics.WebProperties.patch("a_valid_oauth_token", account_id, web_property_id, resource)
+Google.Apis.Analytics.WebProperties.update("a_valid_oauth_token", account_id, web_property_id, resource)
+
 Google.Apis.??? # Submit a PR
 ```
