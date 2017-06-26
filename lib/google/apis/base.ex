@@ -26,6 +26,12 @@ defmodule Google.Apis.Base do
       defp build_auth_headers(token) do
         ["Authorization": "Bearer #{token}", "Content-Type": "application/json"]
       end
+
+      defp build_api_response(%HTTPoison.Response{body: body, status_code: status_code}) when status_code > 199 and status_code < 300 do
+        {:ok, body}
+      end
+
+      defp build_api_response(%HTTPoison.Response{} = response), do: {:error, response}
     end
   end
 end

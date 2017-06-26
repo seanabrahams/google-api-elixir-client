@@ -13,7 +13,8 @@ defmodule Google.Apis.Analytics.WebProperties do
   """
   def get(token, account_id, web_property_id) do
     headers = build_auth_headers(token)
-    get!("#{account_id}/webproperties/#{web_property_id}", headers).body
+    get!("#{account_id}/webproperties/#{web_property_id}", headers)
+    |> build_api_response()
   end
 
   @doc """
@@ -27,7 +28,8 @@ defmodule Google.Apis.Analytics.WebProperties do
   def insert(token, account_id, resource) do
     headers = build_auth_headers(token)
     body = %{resource: resource} |> Poison.encode!
-    post!("#{account_id}/webproperties", body, headers).body
+    post!("#{account_id}/webproperties", body, headers)
+    |> build_api_response()
   end
 
   @doc """
@@ -38,7 +40,8 @@ defmodule Google.Apis.Analytics.WebProperties do
   """
   def list(token, account_id) do
     headers = build_auth_headers(token)
-    get!("#{account_id}/webproperties", headers).body
+    get!("#{account_id}/webproperties", headers)
+    |> build_api_response()
   end
 
   @doc """
@@ -52,7 +55,8 @@ defmodule Google.Apis.Analytics.WebProperties do
   def patch(token, account_id, web_property_id, resource) do
     headers = build_auth_headers(token)
     body = %{resource: resource} |> Poison.encode!
-    patch!("#{account_id}/webproperties/#{web_property_id}", body, headers).body
+    patch!("#{account_id}/webproperties/#{web_property_id}", body, headers)
+    |> build_api_response()
   end
 
 
@@ -67,6 +71,7 @@ defmodule Google.Apis.Analytics.WebProperties do
   def update(token, account_id, web_property_id, resource) do
     headers = build_auth_headers(token)
     body = %{resource: resource} |> Poison.encode!
-    put!("#{account_id}/webproperties/#{web_property_id}", body, headers).body
+    put!("#{account_id}/webproperties/#{web_property_id}", body, headers)
+    |> build_api_response()
   end
 end

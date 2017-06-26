@@ -14,6 +14,7 @@ defmodule Google.Apis.Analytics.Accounts do
   """
   def list(token, params \\ [max_results: 100,  start_index: 0]) do
     headers = build_auth_headers(token)
-    get!(URI.encode_query(params), headers).body
+    get!(URI.encode_query(params), headers)
+    |> build_api_response()
   end
 end
