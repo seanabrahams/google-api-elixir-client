@@ -2,7 +2,7 @@ defmodule Google.Apis.Analytics.WebProperties do
   use Google.Apis.Base, endpoint: "https://www.googleapis.com/analytics/v3/management/accounts/", oauth_only: true
 
   @moduledoc """
-    Google Analytics, Accounts Management: https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/management/accounts
+    Google Analytics, Web Properties Management: https://developers.google.com/analytics/devguides/config/mgmt/v3/mgmtReference/management/webproperties
   """
 
   @doc """
