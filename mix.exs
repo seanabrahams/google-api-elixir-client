@@ -7,6 +7,10 @@ defmodule Google.Mixfile do
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
+     elixirc_paths: elixirc_paths(Mix.env),
+     preferred_cli_env: [
+       vcr: :test, "vcr.delete": :test, "vcr.check": :test, "vcr.show": :test
+     ],
      deps: deps()]
   end
 
@@ -29,7 +33,11 @@ defmodule Google.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.8"},
-      {:poison, "~> 1.5 or ~> 2.0"}
+      {:poison, "~> 1.5 or ~> 2.0"},
+      {:exvcr, "~> 0.8", only: :test}
     ]
   end
+
+  defp elixirc_paths(:test), do: ["lib", "test/support"]
+  defp elixirc_paths(_), do: ["lib"]
 end

@@ -1,0 +1,34 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": {
+        "Authorization": "***",
+        "Content-Type": "application/json"
+      },
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties"
+    },
+    "response": {
+      "body": "{\"kind\":\"analytics#webproperties\",\"username\":\"daniel@testco.com\",\"totalResults\":6,\"startIndex\":1,\"itemsPerPage\":1000,\"items\":[{\"id\":\"UA-12345678-1\",\"kind\":\"analytics#webproperty\",\"selfLink\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-1\",\"accountId\":\"12345678\",\"internalWebPropertyId\":\"12345678\",\"name\":\"example.net\",\"websiteUrl\":\"http://example.net\",\"level\":\"STANDARD\",\"profileCount\":1,\"industryVertical\":\"INTERNET_AND_TELECOM\",\"permissions\":{\"effective\":[\"COLLABORATE\",\"EDIT\",\"MANAGE_USERS\",\"READ_AND_ANALYZE\"]},\"created\":\"2015-07-11T17:11:47.869Z\",\"updated\":\"2015-07-13T15:04:19.566Z\",\"parentLink\":{\"type\":\"analytics#account\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678\"},\"childLink\":{\"type\":\"analytics#profiles\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-1/profiles\"}},{\"id\":\"UA-12345678-2\",\"kind\":\"analytics#webproperty\",\"selfLink\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-2\",\"accountId\":\"12345678\",\"internalWebPropertyId\":\"12345678\",\"name\":\"example.us\",\"websiteUrl\":\"https://example.us\",\"level\":\"STANDARD\",\"profileCount\":1,\"industryVertical\":\"INTERNET_AND_TELECOM\",\"defaultProfileId\":\"12345678\",\"permissions\":{\"effective\":[\"COLLABORATE\",\"EDIT\",\"MANAGE_USERS\",\"READ_AND_ANALYZE\"]},\"created\":\"2015-07-16T21:45:49.823Z\",\"updated\":\"2015-07-16T21:45:59.832Z\",\"parentLink\":{\"type\":\"analytics#account\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678\"},\"childLink\":{\"type\":\"analytics#profiles\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-2/profiles\"}},{\"id\":\"UA-12345678-3\",\"kind\":\"analytics#webproperty\",\"selfLink\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-3\",\"accountId\":\"12345678\",\"internalWebPropertyId\":\"12345678\",\"name\":\"example.com\",\"websiteUrl\":\"https://www.example.com\",\"level\":\"STANDARD\",\"profileCount\":1,\"industryVertical\":\"HEALTHCARE\",\"defaultProfileId\":\"12345678\",\"permissions\":{\"effective\":[\"COLLABORATE\",\"EDIT\",\"MANAGE_USERS\",\"READ_AND_ANALYZE\"]},\"created\":\"2015-07-20T20:47:21.236Z\",\"updated\":\"2015-07-22T05:28:30.793Z\",\"parentLink\":{\"type\":\"analytics#account\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678\"},\"childLink\":{\"type\":\"analytics#profiles\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-3/profiles\"}},{\"id\":\"UA-12345678-4\",\"kind\":\"analytics#webproperty\",\"selfLink\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-4\",\"accountId\":\"12345678\",\"internalWebPropertyId\":\"12345678\",\"name\":\"example1.net\",\"websiteUrl\":\"http://www.example1.net\",\"level\":\"STANDARD\",\"profileCount\":1,\"industryVertical\":\"COMPUTERS_AND_ELECTRONICS\",\"defaultProfileId\":\"12345678\",\"permissions\":{\"effective\":[\"COLLABORATE\",\"EDIT\",\"MANAGE_USERS\",\"READ_AND_ANALYZE\"]},\"created\":\"2015-07-22T01:37:14.928Z\",\"updated\":\"2015-07-22T01:37:17.204Z\",\"parentLink\":{\"type\":\"analytics#account\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678\"},\"childLink\":{\"type\":\"analytics#profiles\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-4/profiles\"}},{\"id\":\"UA-12345678-5\",\"kind\":\"analytics#webproperty\",\"selfLink\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-5\",\"accountId\":\"12345678\",\"internalWebPropertyId\":\"12345678\",\"name\":\"example2.net\",\"websiteUrl\":\"http://www.example2.net\",\"level\":\"STANDARD\",\"profileCount\":1,\"industryVertical\":\"COMPUTERS_AND_ELECTRONICS\",\"defaultProfileId\":\"12345678\",\"permissions\":{\"effective\":[\"COLLABORATE\",\"EDIT\",\"MANAGE_USERS\",\"READ_AND_ANALYZE\"]},\"created\":\"2015-07-22T17:35:50.478Z\",\"updated\":\"2015-07-22T17:50:29.010Z\",\"parentLink\":{\"type\":\"analytics#account\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678\"},\"childLink\":{\"type\":\"analytics#profiles\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-5/profiles\"}},{\"id\":\"UA-12345678-6\",\"kind\":\"analytics#webproperty\",\"selfLink\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-6\",\"accountId\":\"12345678\",\"internalWebPropertyId\":\"12345678\",\"name\":\"example.tumblr.com/\",\"websiteUrl\":\"http://example.tumblr.com/\",\"level\":\"STANDARD\",\"profileCount\":1,\"industryVertical\":\"ARTS_AND_ENTERTAINMENT\",\"defaultProfileId\":\"12345678\",\"permissions\":{\"effective\":[\"COLLABORATE\",\"EDIT\",\"MANAGE_USERS\",\"READ_AND_ANALYZE\"]},\"created\":\"2016-02-22T16:41:49.313Z\",\"updated\":\"2016-02-22T16:41:49.313Z\",\"parentLink\":{\"type\":\"analytics#account\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678\"},\"childLink\":{\"type\":\"analytics#profiles\",\"href\":\"https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-6/profiles\"}}]}",
+      "headers": {
+        "Expires": "Wed, 28 Jun 2017 17:28:32 GMT",
+        "Date": "Wed, 28 Jun 2017 17:28:32 GMT",
+        "Cache-Control": "private, max-age=0, must-revalidate, no-transform",
+        "ETag": "\"f7I_c57UUFPNhe6k9kg6-jYr1TI/Qb2SEa01cJVDTHrfdfv-j7dJiK4\"",
+        "Vary": "Origin",
+        "Content-Type": "application/json; charset=UTF-8",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "Content-Length": "5129",
+        "Server": "GSE",
+        "Alt-Svc": "quic=\":443\"; ma=12345678; v=\"39,38,37,36,35\""
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]
