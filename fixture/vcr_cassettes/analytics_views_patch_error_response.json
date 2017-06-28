@@ -1,15 +1,15 @@
 [
   {
     "request": {
-      "body": "",
+      "body": "{\"websiteUrl\":\"http://www.examplepetstore.com\",\"name\":\"Example Store\"}",
       "headers": {
         "Authorization": "***",
         "Content-Type": "application/json"
       },
-      "method": "get",
+      "method": "patch",
       "options": [],
       "request_body": "",
-      "url": "https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-6"
+      "url": "https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties/UA-12345678-6/profiles/A1"
     },
     "response": {
       "body": "{\"error\":{\"errors\":[{\"domain\":\"global\",\"reason\":\"authError\",\"message\":\"Invalid Credentials\",\"locationType\":\"header\",\"location\":\"Authorization\"}],\"code\":401,\"message\":\"Invalid Credentials\"}}",
@@ -17,8 +17,8 @@
         "Vary": "X-Origin",
         "WWW-Authenticate": "Bearer realm=\"https://accounts.google.com/\", error=invalid_token",
         "Content-Type": "application/json; charset=UTF-8",
-        "Date": "Wed, 28 Jun 2017 20:09:16 GMT",
-        "Expires": "Wed, 28 Jun 2017 20:09:16 GMT",
+        "Date": "Wed, 28 Jun 2017 20:01:37 GMT",
+        "Expires": "Wed, 28 Jun 2017 20:01:37 GMT",
         "Cache-Control": "private, max-age=0",
         "X-Content-Type-Options": "nosniff",
         "X-Frame-Options": "SAMEORIGIN",
