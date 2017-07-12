@@ -36,7 +36,8 @@ defmodule Google.Mixfile do
     [
       {:httpoison, "~> 0.8"},
       {:poison, "~> 1.5 or ~> 2.0 or ~> 3.0"},
-      {:exvcr, "~> 0.8", only: :test}
+      {:ex_doc, ">= 0.0.0", only: :dev},
+      {:exvcr, "~> 0.8", only: :test},
     ]
   end
 
