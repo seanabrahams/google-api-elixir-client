@@ -1,0 +1,35 @@
+[
+  {
+    "request": {
+      "body": "{\"websiteUrl\":[104,116,116,112,58,47,47,119,119,119,46,101,120,97,109,112,108,101,112,101,116,115,116,111,114,101,46,99,111,109],\"name\":\"Example Store\"}",
+      "headers": {
+        "Authorization": "***",
+        "Content-Type": "application/json"
+      },
+      "method": "post",
+      "options": [],
+      "request_body": "",
+      "url": "https://www.googleapis.com/analytics/v3/management/accounts/12345678/webproperties"
+    },
+    "response": {
+      "body": "{\"error\":{\"errors\":[{\"domain\":\"global\",\"reason\":\"authError\",\"message\":\"Invalid Credentials\",\"locationType\":\"header\",\"location\":\"Authorization\"}],\"code\":401,\"message\":\"Invalid Credentials\"}}",
+      "headers": {
+        "Vary": "X-Origin",
+        "WWW-Authenticate": "Bearer realm=\"https://accounts.google.com/\", error=invalid_token",
+        "Content-Type": "application/json; charset=UTF-8",
+        "Date": "Wed, 28 Jun 2017 18:00:10 GMT",
+        "Expires": "Wed, 28 Jun 2017 18:00:10 GMT",
+        "Cache-Control": "private, max-age=0",
+        "X-Content-Type-Options": "nosniff",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; mode=block",
+        "Server": "GSE",
+        "Alt-Svc": "quic=\":443\"; ma=12345678; v=\"39,38,37,36,35\"",
+        "Accept-Ranges": "none",
+        "Transfer-Encoding": "chunked"
+      },
+      "status_code": 401,
+      "type": "ok"
+    }
+  }
+]

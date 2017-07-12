@@ -15,6 +15,7 @@ defmodule Google.Apis.Places do
 
   def autocomplete(input, params \\ []) do
     params = [input: input] ++ params
-    get!(URI.encode_query(params)).body
+    get!(URI.encode_query(params))
+    |> build_api_response()
   end
 end

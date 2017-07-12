@@ -23,6 +23,7 @@ defmodule Google.Apis.Maps.TimeZone do
   def get(params \\ [location: {}, timestamp: DateTime.to_unix(DateTime.utc_now)]) do
     params = Keyword.update!(params, :location, fn(l) -> Enum.join(Tuple.to_list(l), ",") end)
     params = Keyword.put_new(params, :timestamp, DateTime.to_unix(DateTime.utc_now))
-    get!(URI.encode_query(params)).body
+    get!(URI.encode_query(params))
+    |> build_api_response()
   end
 end

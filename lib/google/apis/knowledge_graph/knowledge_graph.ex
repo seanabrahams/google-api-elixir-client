@@ -15,6 +15,7 @@ defmodule Google.Apis.KnowledgeGraph do
   """
   def search(query, params \\ [indent: false,  prefix: false, limit: 10]) do
     params = [query: query] ++ params
-    get!(URI.encode_query(params)).body
+    get!(URI.encode_query(params))
+    |> build_api_response()
   end
 end
