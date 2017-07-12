@@ -4,6 +4,7 @@ Elixir library for accessing Google APIs.
 
 Only the following APIs are supported:
 
+* Analytics (partial)
 * Knowledge Graph Search API
 * Maps Time Zone API
 * Places Autocomplete
@@ -16,7 +17,7 @@ PRs are welcome for more APIs.
 
 ```elixir
   def deps do
-    [{:google_api_client, git: "https://github.com/seanabrahams/google-api-elixir-client.git"}]
+    [{:google_api_client, "~> 1.0"}]
   end
 ```
 
@@ -73,3 +74,7 @@ Views.update("a_valid_oauth_token", account_id, web_property_id, profile_id, res
 
 Google.Apis.??? # Submit a PR
 ```
+
+# Special Thanks / Contributors
+
+* Daniel Upton @elkelk

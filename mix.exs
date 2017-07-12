@@ -3,7 +3,9 @@ defmodule Google.Mixfile do
 
   def project do
     [app: :google_api_client,
-     version: "0.1.0",
+     version: "1.0.0",
+     description: "Google API Client for Elixir",
+     package: package(),
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
@@ -33,11 +35,19 @@ defmodule Google.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 0.8"},
-      {:poison, "~> 1.5 or ~> 2.0"},
+      {:poison, "~> 1.5 or ~> 2.0 or ~> 3.0"},
       {:exvcr, "~> 0.8", only: :test}
     ]
   end
 
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
+
+  defp package do
+    [
+      maintainers: ["Sean Abrahams"],
+      licenses: ["BSD"],
+      links: %{"GitHub" => "https://github.com/seanabrahams/google-api-elixir-client"},
+    ]
+  end
 end
