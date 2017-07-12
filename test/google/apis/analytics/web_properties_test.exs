@@ -7,6 +7,7 @@ defmodule Google.Apis.Analytics.WebPropertiesTest do
   @resource %{websiteUrl: "http://www.examplepetstore.com", name: "Example Store"}
   @account_id "12345678"
   @web_property_id "UA-12345678-6"
+  @response ""
 
   test "#get 401 response" do
     use_cassette "analytics_web_properties_get_error_response" do

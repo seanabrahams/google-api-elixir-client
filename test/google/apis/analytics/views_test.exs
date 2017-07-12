@@ -8,6 +8,7 @@ defmodule Google.Apis.Analytics.ViewsTest do
   @account_id "12345678"
   @web_property_id "UA-12345678-6"
   @profile_id "A1"
+  @response ""
 
   test "#get 401 response" do
     use_cassette "analytics_views_get_error_response" do
