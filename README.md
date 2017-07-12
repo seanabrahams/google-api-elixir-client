@@ -8,6 +8,7 @@ Only the following APIs are supported:
 * Maps Time Zone API
 * Places Autocomplete
 * Nearby Places Search
+* Place Details
 
 PRs are welcome for more APIs.
 
