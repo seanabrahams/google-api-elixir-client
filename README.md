@@ -18,7 +18,7 @@ PRs are welcome for more APIs.
 
 ```elixir
   def deps do
-    [{:google_api_client, "~> 1.0"}]
+    [{:google_api_client, "~> 1.1"}]
   end
 ```
 
@@ -80,3 +80,4 @@ Google.Apis.??? # Submit a PR
 # Special Thanks / Contributors
 
 * Daniel Upton @elkelk
+* AJ Gregory @aj-gregory

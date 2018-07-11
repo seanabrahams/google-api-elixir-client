@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.0 (2018-07-11)
+* Enhancements
+  * Add support for Google Maps nearby places API
+
 ## 1.0.0 (2017-07-12)
 
 * Breaking

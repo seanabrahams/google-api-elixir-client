@@ -3,7 +3,7 @@ defmodule Google.Mixfile do
 
   def project do
     [app: :google_api_client,
-     version: "1.0.0",
+     version: "1.1.0",
      description: "Google API Client for Elixir",
      package: package(),
      elixir: "~> 1.3",
